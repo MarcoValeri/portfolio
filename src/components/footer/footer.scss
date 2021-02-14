@@ -1,0 +1,32 @@
+footer {
+    height: 30vh;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+
+    .react-icons-github,
+    .react-icons-twitter {
+        display: block;
+        margin: 1rem auto;
+        font-size: 2rem;
+    }
+
+    .react-icons-github {
+        color: #F1502F;
+    }
+
+    .react-icons-twitter {
+        color: #1DA1F2;
+    }
+
+    .footer-heart {
+        color: #ff0000;
+        font-size: 1.5rem;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+}

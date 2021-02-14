@@ -1,0 +1,20 @@
+.home-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "skills"
+    "footer";
+
+    header {
+        grid-area: header;
+    }
+
+    .skills {
+        grid-area: skills;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}

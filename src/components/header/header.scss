@@ -1,0 +1,121 @@
+header {
+    height: 70vh;
+    position: relative;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(247, 247, 247, 0.8),
+        rgba(255, 255, 156, 0.8)
+    );
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+
+    .header-title {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .header-title-main {
+            padding: .8rem;
+            border: 5px solid #000;
+            border-radius: 15px;
+
+            .header-title-main-one {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                animation: moveInLeft 1s ease-out;
+            }
+
+            @keyframes moveInLeft {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+                80% {
+                    transform: translateX(10px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translate(0);
+                }
+            }
+
+            .header-title-main-two {
+                animation: moveInRight 1s ease-out;
+                margin-bottom: 1rem;
+            }
+
+            @keyframes moveInRight {
+                0% {
+                    opacity: 0;
+                    transform: translateX(100px);
+                }
+                80% {
+                    transform: translateX(-10px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translate(0);
+                }
+            }
+
+        }
+
+        .header-icons {
+            margin-top: 2rem;
+
+            .react-icons {
+                font-size: 2rem;
+                padding: 1rem;
+                animation: moveInUp 1s ease-out;
+            }
+
+            .react-icons-php {
+                color: #232531;
+            }
+
+            .react-icons-mysql {
+                color: #00758F;
+            }
+
+            .react-icons-react {
+                color: #61DBFB;
+            }
+
+            .react-icons-js {
+                color: #323330;
+            }
+
+            .react-icons-sass {
+                color: #c69;
+            }
+
+            .react-icons-css {
+                color: #264de4;
+            }
+
+            .react-icons-html {
+                color: #f06529;
+            }
+
+            @keyframes moveInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(100px);
+                }
+                80% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translate(0);
+                }
+            }
+
+        }
+    }
+}
