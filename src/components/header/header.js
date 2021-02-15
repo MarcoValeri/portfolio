@@ -20,7 +20,7 @@ const Header = () => {
                    <h1 className="header-title-main-one">Marco Valeri</h1>
                    <h2 className="header-title-main-two">Full Stack Developer</h2>
                </section>
-               <section class="header-icons">
+               <section className="header-icons">
                    <IconContext.Provider value={{ className: 'react-icons' }}>
                         <IconContext.Provider value={{ className: 'react-icons react-icons-php'}}>
                             <FaPhp />
