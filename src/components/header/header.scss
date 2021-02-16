@@ -119,3 +119,110 @@ header {
         }
     }
 }
+
+/*
+* Media Queries max with 299px
+* for small smartphone like JioPhone 2
+*/
+@media (max-width: 299px) {
+
+    header {
+
+        .header-title {
+
+            .header-title-main {
+                border: none;
+
+                .header-title-main-one {
+                    font-size: 1.5rem;
+                }
+
+                .header-title-main-two {
+                    font-size: 1rem;
+                }
+            }
+
+            .header-icons {
+                display: none;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 300px max with 320px
+* for small smartphone like iPhone 4
+*/
+@media (min-width: 300px) and (max-width: 320px) {
+
+    header {
+        
+        .header-title {
+            top: 50%;
+
+            .header-title-main {
+                padding: .3rem;
+                
+                .header-title-main-one {
+                    font-size: 1.5rem;
+                }
+
+                .header-title-main-two {
+                    font-size: 1rem;
+                }
+            }
+
+            .header-icons {
+                margin-top: 0rem;
+
+                .react-icons-js {
+                    display: none;
+                }
+    
+                .react-icons-sass {
+                    display: none;
+                }
+    
+                .react-icons-css {
+                    display: none;
+                }
+    
+                .react-icons-html {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 450px max with 767px
+* for landscape
+*/
+@media (min-width: 450px) and (max-width: 767px) {
+
+    header {
+        
+        .header-title {
+
+            .header-title-main {
+                border: none;
+                
+                .header-title-main-one {
+                    font-size: 1.5rem;
+                }
+
+                .header-title-main-two {
+                    font-size: 1rem;
+                }
+            }
+
+            .header-icons {
+                display: none;
+            }
+        }
+    }
+
+}

@@ -16,10 +16,10 @@
         width: 90%;
         height: 45%;
         position: absolute;
+        display: flex;
         justify-content: space-around;
         align-items: stretch;
         flex-wrap: wrap;
-        display: flex;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -43,4 +43,50 @@
             }
         }
     }
+}
+
+/*
+* Media Queries max with 299px
+* for small smartphone like JioPhone 2
+*/
+@media (max-width: 299px) {
+
+    .skills {
+
+        .skills-container {
+            font-size: .5rem;
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 300px max with 320px
+* for small smartphone like iPhone 4
+*/
+@media (min-width: 300px) and (max-width: 320px) {
+
+    .skills {
+
+        .skills-container {
+            font-size: .8rem;
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 450px max with 767px
+* for landscape
+*/
+@media (min-width: 450px) and (max-width: 767px) {
+
+    .skills {
+        overflow: auto;
+
+        .skills-container {
+            font-size: .6rem;
+        }
+    }
+
 }

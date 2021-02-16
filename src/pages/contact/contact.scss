@@ -1,0 +1,110 @@
+.contact-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "contact-main"
+    "footer";
+
+    header {
+        grid-area: header;
+    }
+
+    .contact-main {
+        grid-area: contact-main;
+
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(247, 247, 247, 0.8),
+            rgba(255, 255, 156, 0.8)
+        );
+        background-size: cover;
+        background-position: top;
+        position: relative;
+
+        clip-path: polygon(0 20vh, 100% 0, 100% 70vh, 0 100%);
+
+        .contact-main-container {
+            width: 80%;
+            height: 45%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h2 {
+                margin-bottom: .5rem;
+            }
+
+            p {
+                line-height: 1.6;
+                margin-bottom: .5rem;
+            }
+
+            ul {
+
+                li {
+                    list-style: none;
+                    font-weight: 900;
+                    line-height: 1.6;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/*
+* Media Queries max with 299px
+* for small smartphone like JioPhone 2
+*/
+@media (max-width: 299px) {
+
+    .contact-main {
+        
+        .contact-main-container {
+            overflow: scroll;
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 300px max with 320px
+* for small smartphone like iPhone 4
+*/
+@media (min-width: 300px) and (max-width: 320px) {
+
+    .contact-main {
+        
+        .contact-main-container {
+            overflow: scroll;
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 450px max with 767px
+* for landscape
+*/
+@media (min-width: 450px) and (max-width: 767px) {
+
+    .contact-main {
+        
+        .contact-main-container {
+            overflow: scroll;
+        }
+    }
+
+}

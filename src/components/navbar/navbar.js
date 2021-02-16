@@ -14,9 +14,9 @@ const Navbar = () => {
                 <span></span>
                 <ul className="nav-menu">
                     <li><Link to="/">Home</Link></li>
-                    <li>About Me</li>
+                    <li><Link to="/about">About Me</Link></li>
                     <li><Link to="/portfolio">Portfolio</Link></li>
-                    <li>Contact</li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </nav>

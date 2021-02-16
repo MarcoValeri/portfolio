@@ -13,3 +13,27 @@
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
 }
+
+/*
+* Media Queries max with 299px
+* for small smartphone like JioPhone 2
+*/
+@media (max-width: 299px) {
+
+    .elastic-title {
+        font-size: 1.8rem;
+    }
+
+}
+
+/*
+* Media Queries min width 300px max with 320px
+* for small smartphone like iPhone 4
+*/
+@media (min-width: 300px) and (max-width: 320px) {
+
+    .elastic-title {
+        font-size: 2.5rem;
+    }
+
+}

@@ -30,3 +30,39 @@ footer {
         line-height: 1.6;
     }
 }
+
+/*
+* Media Queries max with 299px
+* for small smartphone like JioPhone 2
+*/
+@media (max-width: 299px) {
+
+    footer {
+        height: 70vh;
+    }
+
+}
+
+/*
+* Media Queries min width 300px max with 320px
+* for small smartphone like iPhone 4
+*/
+@media (min-width: 300px) and (max-width: 320px) {
+
+    footer {
+        height: 40vh;
+    }
+
+}
+
+/*
+* Media Queries min width 450px max with 767px
+* for landscape
+*/
+@media (min-width: 450px) and (max-width: 767px) {
+
+    footer {
+        height: 60vh;
+    }
+
+}

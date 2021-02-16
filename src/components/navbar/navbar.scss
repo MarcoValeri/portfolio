@@ -72,31 +72,104 @@ nav {
         input:checked ~ span:nth-last-child(2) {
             transform: rotate(-45deg) translate(0, 1px);
         }
+    }
 
-        .nav-menu {
-            position: absolute;
-            width: 90%;
-            margin: -100px 0 0 -50px;
-            padding: 50px;
-            padding-top: 125px;
+    .nav-menu {
+        position: absolute;
+        width: 90%;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
 
-            background: #FFFF9C;
-            list-style-type: none;
-            -webkit-font-smoothing: antialiased;
+        background: #FFFF9C;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
 
-            transform-origin: 0% 0%;
-            transform: translate(-100%, 0);
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
 
-            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
-            li {
-                padding: 10px 0;
-                font-size: 22px;
-            }
-        }
-
-        input:checked ~ ul {
-            transform: none;
+        li {
+            padding: 10px 0;
+            font-size: 22px;
         }
     }
+
+    input:checked ~ ul {
+        transform: none;
+    }
+}
+
+/*
+* Media Queries max with 299px
+* for small smartphone like JioPhone 2
+*/
+@media (max-width: 299px) {
+
+    nav {
+
+        .navbar-menu-toggle {
+
+            .nav-menu {
+                width: 70%;
+
+                li {
+                    font-size: 1rem;
+                    padding: .3rem 0;
+                }
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 300px max with 320px
+* for small smartphone like iPhone 4
+*/
+@media (min-width: 300px) and (max-width: 320px) {
+
+    nav {
+
+        .navbar-menu-toggle {
+
+            .nav-menu {
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 450px max with 767px
+* for landscape
+*/
+@media (min-width: 450px) and (max-width: 767px) {
+
+    nav {
+
+        .navbar-menu-toggle {
+
+            .nav-menu {
+                width: 90%;
+
+                li {
+                    font-size: 1rem;
+                    padding: .3rem 0;
+                }
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 768px max with 1024px
+* for tablets
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
 }
