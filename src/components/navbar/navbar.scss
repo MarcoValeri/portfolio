@@ -171,5 +171,95 @@ nav {
 */
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    nav {
+
+        .navbar-menu-toggle {
+            
+            input,
+            span {
+                display: none;
+            }
+        }
+
+        .nav-menu {
+            width: 95%;
+            display: inline;
+            transform: translate(0, 0);
+            background: none;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 768px max with 1024px
+* for tablets
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    nav {
+
+        .navbar-menu-toggle {
+            
+            input,
+            span {
+                display: none;
+            }
+        }
+
+        .nav-menu {
+            width: 95%;
+            display: inline;
+            transform: translate(0, 0);
+            background: none;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 1025px
+* for laptops and desktop
+*/
+@media (min-width: 1025px){
+
+    nav {
+
+        .navbar-menu-toggle {
+            
+            input,
+            span {
+                display: none;
+            }
+        }
+
+        .nav-menu {
+            width: 95%;
+            display: inline;
+            transform: translate(0, 0);
+            background: none;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
 
 }

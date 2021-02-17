@@ -226,3 +226,71 @@ header {
     }
 
 }
+
+/*
+* Media Queries min width 768px max with 1024px
+* for tablets
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+        
+        .header-title {
+
+            .header-title-main {
+
+                .header-title-main-one {
+                    font-size: 3rem;
+                }
+
+                .header-title-main-two {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .header-icons {
+
+                .react-icons {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries min width 1025px
+* for laptops and desktop
+*/
+@media (min-width: 1025px){
+
+    header {
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+
+        .header-title {
+            width: 40%;
+            top: 45%;
+
+            .header-title-main {
+
+                .header-title-main-one {
+                    font-size: 3rem;
+                }
+
+                .header-title-main-two {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .header-icons {
+                
+                .react-icons {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+}
