@@ -3,12 +3,17 @@
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
+    "squares"
     "portfolio-title"
     "main"
     "footer";
 
     header {
         grid-area: header;
+    }
+
+    .squares {
+        grid-area: squares;
     }
 
     .portfolio-title {

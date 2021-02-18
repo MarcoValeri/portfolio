@@ -3,11 +3,16 @@
     grid-template-columns: 1fr;
     grid-template-areas:
     "header"
+    "bars"
     "skills"
     "footer";
 
     header {
         grid-area: header;
+    }
+
+    .bars {
+        grid-area: bars;
     }
 
     .skills {

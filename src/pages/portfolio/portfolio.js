@@ -3,6 +3,7 @@ import React from 'react';
 // Components
 import Header from '../../components/header/header';
 import ElasticTitle from '../../components/elastic-title/elastic-title';
+import Squares from '../../components/squares/squares';
 import Project from '../../components/project/project';
 import Footer from '../../components/footer/footer';
 
@@ -24,6 +25,7 @@ const Portfolio = () => {
             <section className="portfolio-title">
                 <ElasticTitle title="portfolio" />
             </section>
+            <Squares />
             <main>
                 <section className="portfolio-project" style={{ backgroundImage: `url("${viaggin}")` }}>
                     <section className="portfolio-project-text">

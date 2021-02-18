@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import Header from '../../components/header/header';
+import Bars from '../../components/bars/bars';
 import Footer from '../../components/footer/footer';
 
 // Import style file
@@ -11,6 +12,7 @@ const Contact = () => {
     return (
         <div className="contact-grid-container">
             <Header />
+            <Bars />
             <main className="contact-main">
                 <section className="contact-main-container">
                     <h2>Contact</h2>

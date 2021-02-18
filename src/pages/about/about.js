@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import Header from '../../components/header/header';
+import Bars from '../../components/bars/bars';
 import Footer from '../../components/footer/footer';
 
 // Import style
@@ -11,6 +12,7 @@ const About = () => {
     return (
         <div className="about-grid-container">
             <Header />
+            <Bars />
             <main className="about-main">
                 <section className="about-main-container">
                     <h2>Hi, my name is Marco</h2>
