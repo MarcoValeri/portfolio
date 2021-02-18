@@ -15,38 +15,37 @@ const About = () => {
             <Bars />
             <main className="about-main">
                 <section className="about-main-container">
-                    <h2>Hi, my name is Marco</h2>
-                    <h3>Nice to meet you</h3>
+                    <h2>Hi and welcome</h2>
+                    <h3>My name is Marco</h3>
                     <p>
                     I was born in 1984 in Rome, Italy.
                     <br />
                     <br />
-                    When I was 20 year old I started to work as an SEO Specialist and Content Creator in Rome.
+                    When I was 20 years old I started to work as an SEO Specialist and Content Creator in Rome.
                     <br />
                     <br />
-                    In 2015 I moved to London with my beautiful girlfriend and our crazy cat. It has been an incredible and important year for me.
-                    London is an incredible city, I met there people from all over the world, it has opened my eyes and let me know about thousands of stories.
+                    My life changed in 2015, when I moved to London with my beautiful girlfriend and our crazy cat. It has been a life changing experience. 
+                    London is an incredible city, and I was lucky enough to meet people from all over the world - it has opened my eyes, allowing me to listen to thousands of stories.
                     <br />
                     <br />
-                    So, in 2016 I decided to open a Travel Magazine that has reached 300k users in fews years thanks to my SEO and Content skills.
-                    With this experience I understand how important are programming languages to have a stable and creative business online.
+                    I’ve always been passionate about the world and extremely curious. 
+                    In 2016 I decided to combine my SEO and writing skills with my love for traveling and exploring, and decided to open a Travel Magazine that has reached 300k users in only a few years.
+                    <br />
+                    <br />
+                    Managing a website on my own, gave me the chance to fully understand how important programming languages are to create, and maintain, a stable, creative business online.
                     <br />
                     <br />
                     One year later I won a Google Internship with Udacity in Programming Languages where I studied the basics of this field: HTML5, CSS3 and JavaScript.
                     <br />
                     <br />
-                    In 2018 I was completely in love with programming languages so I decided to improve my skills as a Web Developer. 
-                    I applied later that year at Birkbeck University of London where in the 2021 I got a Foundation Degree in Computer Science.
+                    In 2018 I was completely in love with programming languages, therefore, decided to improve my skills as a Web Developer.
+                    Little did I know that in 2021 I would have graduated from  the Birkbeck University of London in Computer Science.
                     <br />
                     <br />
-                    It has been an incredible experience where I learn everything about programming languages and its environment such as binary text, hexadecimal and octal system, MVC and other paths, OOP, the importance of libraries and frameworks and how to meet responsive Design best practice.
+                    In these past years I specialised in Front End Development with HTML5, CSS3, SASS, JavaScript and React, opting for PHP and MySQL for Back End Development.
                     <br />
                     <br />
-                    In these years I decided to specialize myself in Front End Development with HTML5, CSS3, SASS, JavaScript and React.
-                    For Back End Development I decided to master PHP and MySQL.
-                    <br />
-                    <br />
-                    Nowadays these technologies, combined with my SEO background, give me the skills to work through any kind of projects.
+                    Nowadays, these technologies, combined with my SEO background, give me the skills to work through any kind of projects.
                     <br />
                     <br />
                     <br />
