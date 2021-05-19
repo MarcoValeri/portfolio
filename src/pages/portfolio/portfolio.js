@@ -16,6 +16,7 @@ const nasagallery = '/images/nasagallery.jpg'; //Photo by Joost Crop on Unsplash
 const viaggin = '/images/viaggin.jpg'; // Photo by Jack B on Unsplash
 const wordscounter = '/images/words-counter.jpg'; // Photo by Csabi Elter on Unsplash
 const coltellistrumenticucina = '/images/coltellistrumenticucina.jpg'; // Photo by Todd Quackenbush on Unsplash
+const treatMigraineNaturally = 'images/treat-migraine-naturally.jpg'; // Photo by Unsplash
 
 const Portfolio = () => {
 
@@ -27,6 +28,12 @@ const Portfolio = () => {
             </section>
             <Squares />
             <main>
+                <Project 
+                    image={`${treatMigraineNaturally}`}
+                    title={"Treat Migraine Naturally"}
+                    description={"Web Application with PHP, MySQL, SASS, CSS3 and HTML5"}
+                    url={"https://treatmigrainenaturally.co.uk/"}
+                />
                 <section className="portfolio-project" style={{ backgroundImage: `url("${viaggin}")` }}>
                     <section className="portfolio-project-text">
                         <h1>ViaggIn</h1>
