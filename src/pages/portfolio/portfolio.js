@@ -30,9 +30,10 @@ const Portfolio = () => {
             <main>
                 <Project 
                     image={`${treatMigraineNaturally}`}
-                    title={"Treat Migraine Naturally"}
-                    description={"Web Application with PHP, MySQL, SASS, CSS3 and HTML5"}
+                    title={"Migraine"}
+                    description={"Web App with PHP, MySQL, SASS, CSS3 and HTML5"}
                     url={"https://treatmigrainenaturally.co.uk/"}
+                    content={"Check it out"}
                 />
                 <section className="portfolio-project" style={{ backgroundImage: `url("${viaggin}")` }}>
                     <section className="portfolio-project-text">
@@ -46,12 +47,14 @@ const Portfolio = () => {
                     title={"Words Counter"}
                     description={"Words Counter made with React"}
                     url={"https://words-counter-302018.nw.r.appspot.com/"}
+                    content={"Check it out"}
                 />
                 <Project 
                     image={`${nasagallery}`}
                     title={"NASA Gallery"}
                     description={"NASA Gallery made with React and NASA's APIs"}
                     url={"https://marcovaleri.github.io/nasa-gallery/#/"}
+                    content={"Check it out"}
                 />
                 <section className="portfolio-project" style={{ backgroundImage: `url("${coltellistrumenticucina}")` }}>
                     <section className="portfolio-project-text">
@@ -65,6 +68,7 @@ const Portfolio = () => {
                     title={"Quickbooks"}
                     description={"Quickbooks simulator made with React"}
                     url={"https://marcovaleri.github.io/quickbooks-calculator/"}
+                    content={"Check it out"}
                 />
             </main>
             <Footer />

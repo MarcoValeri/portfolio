@@ -1,0 +1,41 @@
+.btn-animated-wrap {
+    margin: auto;
+    width: 8rem;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(240deg, #FFF 0%, #000 49%, #FFF 80%, #FFF 100%);
+    padding: 3px;
+    border-radius: 10px;
+
+    animation: rainbow 3s linear infinite;
+
+    a {
+
+        text-decoration: none;
+
+        .btn-animated-content {
+            background: #222;
+            color: #FFF;
+            font-size: 1rem;
+            padding: .5rem;
+        }
+    
+        @keyframes rainbow {
+    
+            to {
+                background-position: 10rem;
+            }
+        
+        }
+
+    }
+
+    &:hover {
+        background: linear-gradient(240deg, #FFFF9C 0%, #000 49%, #FFFF9C 80%, #FFFF9C 100%);
+
+        .btn-animated-content {
+            color: #FFFF9C;
+        }
+    }
+
+}
