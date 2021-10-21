@@ -2,7 +2,7 @@ import React from 'react';
 
 // Incons
 import { IconContext } from 'react-icons';
-import { FaGithub, FaTwitterSquare } from 'react-icons/fa';
+import { FaGithub, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 
 // Import style file
 import './footer.scss';
@@ -15,6 +15,11 @@ const Footer = () => {
 
     return (
         <footer>
+            <a href="https://www.linkedin.com/in/valeri-marco/" target="_blank">
+                <IconContext.Provider value={{ className: 'react-icons-linkedin' }}>
+                    <FaLinkedin />
+                </IconContext.Provider>
+            </a>
             <a href="https://github.com/MarcoValeri" target="_blank">
                 <IconContext.Provider value={{ className: 'react-icons-github' }}>
                     <FaGithub />

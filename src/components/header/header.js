@@ -4,6 +4,7 @@ import React from 'react';
 import { FaPhp, FaReact, FaJs, FaSass, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { SiMysql } from 'react-icons/si';
+import { DiSymfony } from 'react-icons/di';
 
 // Components
 import Navbar from '../navbar/navbar';
@@ -25,8 +26,11 @@ const Header = () => {
                         <IconContext.Provider value={{ className: 'react-icons react-icons-php'}}>
                             <FaPhp />
                         </IconContext.Provider>
+                        <IconContext.Provider value={{ className: 'react-icons react-icons-symfony'}}>
+                            <DiSymfony />
+                        </IconContext.Provider>
                         <IconContext.Provider value={{ className: 'react-icons react-icons-mysql'}}>
-                        <SiMysql />
+                            <SiMysql />
                         </IconContext.Provider>
                         <IconContext.Provider value={{ className: 'react-icons react-icons-react'}}>
                             <FaReact />

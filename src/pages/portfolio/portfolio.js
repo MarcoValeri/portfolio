@@ -17,6 +17,7 @@ const viaggin = '/images/viaggin.jpg'; // Photo by Jack B on Unsplash
 const wordscounter = '/images/words-counter.jpg'; // Photo by Csabi Elter on Unsplash
 const coltellistrumenticucina = '/images/coltellistrumenticucina.jpg'; // Photo by Todd Quackenbush on Unsplash
 const treatMigraineNaturally = 'images/treat-migraine-naturally.jpg'; // Photo by Unsplash
+const brandimarte = 'images/brandimarte.jpg';
 
 const Portfolio = () => {
 
@@ -28,6 +29,13 @@ const Portfolio = () => {
             </section>
             <Squares />
             <main>
+                <Project
+                    image={`${brandimarte}`}
+                    title={"Brandimarte"}
+                    description={"Web app with PHP, Symfony, MySQL, SASS, CSS3 and HTML5"}
+                    url={"https://brandimarte.info/"}
+                    content={"Check it out"} 
+                />
                 <Project 
                     image={`${treatMigraineNaturally}`}
                     title={"Migraine"}
