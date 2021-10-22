@@ -6,6 +6,7 @@ import Home from './pages/home/home';
 import Portfolio from './pages/portfolio/portfolio';
 import About from './pages/about/about';
 import Contact from './pages/contact/contact';
+import Viaggin from './pages/viaggin/viaggin';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/viaggin" component={Viaggin} />
     </Switch>
   )
 }
