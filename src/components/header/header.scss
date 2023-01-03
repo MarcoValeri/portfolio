@@ -1,6 +1,8 @@
-header {
-    height: 70vh;
-    position: relative;
+@import '../../App.scss';
+
+.header {
+    height: 90vh;
+    font-family: 'Fuzzy Bubbles', cursive;
     background-image: linear-gradient(
         to right bottom,
         rgba(247, 247, 247, 0.8),
@@ -8,289 +10,154 @@ header {
     );
     background-size: cover;
     background-position: top;
-    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    margin-bottom: 5rem;
 
-    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-
-    .header-title {
-        width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-
-        .header-title-main {
-            padding: .8rem;
-            border: 5px solid #000;
-            border-radius: 15px;
-
-            .header-title-main-one {
-                font-size: 2rem;
-                margin-bottom: 1rem;
-                animation: moveInLeft 1s ease-out;
-            }
-
-            @keyframes moveInLeft {
-                0% {
-                    opacity: 0;
-                    transform: translateX(-100px);
-                }
-                80% {
-                    transform: translateX(10px);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translate(0);
-                }
-            }
-
-            .header-title-main-two {
-                animation: moveInRight 1s ease-out;
-                margin-bottom: 1rem;
-            }
-
-            @keyframes moveInRight {
-                0% {
-                    opacity: 0;
-                    transform: translateX(100px);
-                }
-                80% {
-                    transform: translateX(-10px);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translate(0);
-                }
-            }
-
-        }
-
-        .header-icons {
-            margin-top: 2rem;
-
-            .react-icons {
-                font-size: 2rem;
-                padding: 1rem;
-                animation: moveInUp 1s ease-out;
-            }
-
-            .react-icons-php {
-                color: #232531;
-            }
-
-            .react-icons-mysql {
-                color: #00758F;
-            }
-
-            .react-icons-react {
-                color: #61DBFB;
-            }
-
-            .react-icons-js {
-                color: #323330;
-            }
-
-            .react-icons-sass {
-                color: #c69;
-            }
-
-            .react-icons-css {
-                color: #264de4;
-            }
-
-            .react-icons-html {
-                color: #f06529;
-            }
-
-            @keyframes moveInUp {
-                0% {
-                    opacity: 0;
-                    transform: translateY(100px);
-                }
-                80% {
-                    transform: translateY(-10px);
-                }
-                100% {
-                    transform: translate(0);
-                }
-            }
-
-        }
-    }
-}
-
-/*
-* Media Queries max with 299px
-* for small smartphone like JioPhone 2
-*/
-@media (max-width: 299px) {
-
-    header {
-
-        .header-title {
-
-            .header-title-main {
-                border: none;
-
-                .header-title-main-one {
-                    font-size: 1.5rem;
-                }
-
-                .header-title-main-two {
-                    font-size: 1rem;
-                }
-            }
-
-            .header-icons {
-                display: none;
-            }
-        }
-    }
-
-}
-
-/*
-* Media Queries min width 300px max with 320px
-* for small smartphone like iPhone 4
-*/
-@media (min-width: 300px) and (max-width: 320px) {
-
-    header {
-        
-        .header-title {
-            top: 50%;
-
-            .header-title-main {
-                padding: .3rem;
-                
-                .header-title-main-one {
-                    font-size: 1.5rem;
-                }
-
-                .header-title-main-two {
-                    font-size: 1rem;
-                }
-            }
-
-            .header-icons {
-                margin-top: 0rem;
-
-                .react-icons-js {
-                    display: none;
-                }
-    
-                .react-icons-sass {
-                    display: none;
-                }
-    
-                .react-icons-css {
-                    display: none;
-                }
-    
-                .react-icons-html {
-                    display: none;
-                }
-            }
-        }
-    }
-
-}
-
-/*
-* Media Queries min width 450px max with 767px
-* for landscape
-*/
-@media (min-width: 450px) and (max-width: 767px) {
-
-    header {
-        
-        .header-title {
-
-            .header-title-main {
-                border: none;
-                
-                .header-title-main-one {
-                    font-size: 1.5rem;
-                }
-
-                .header-title-main-two {
-                    font-size: 1rem;
-                }
-            }
-
-            .header-icons {
-                display: none;
-            }
-        }
-    }
-
-}
-
-/*
-* Media Queries min width 768px max with 1024px
-* for tablets
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    header {
-        
-        .header-title {
-
-            .header-title-main {
-
-                .header-title-main-one {
-                    font-size: 3rem;
-                }
-
-                .header-title-main-two {
-                    font-size: 2.5rem;
-                }
-            }
-
-            .header-icons {
-
-                .react-icons {
-                    font-size: 3rem;
-                }
-            }
-        }
-    }
-
-}
-
-/*
-* Media Queries min width 1025px
-* for laptops and desktop
-*/
-@media (min-width: 1025px){
-
-    header {
+    @include respond(md) {
         height: 100vh;
-        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    }
 
-        .header-title {
-            width: 40%;
-            top: 45%;
+    &__container-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
 
-            .header-title-main {
-
-                .header-title-main-one {
-                    font-size: 3rem;
-                }
-
-                .header-title-main-two {
-                    font-size: 2.5rem;
-                }
-            }
-
-            .header-icons {
-                
-                .react-icons {
-                    font-size: 3rem;
-                }
-            }
+        @include respond(md) {
+            align-items: flex-start;
         }
+    }
+
+    &__content-wrapper {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    &__title {
+        animation: move-in-left 1s ease-out;
+    }
+
+    &__title-sub {
+        margin-bottom: 1rem;
+        animation: move-in-right 1s ease-out;
+    }
+
+    &__container-icons {
+        animation: move-in-up 1s ease-in-out;
+    }
+
+    &__icon-node {
+        animation: move-icon-up 8s infinite;
+    }
+
+    &__icon-react {
+        animation: move-icon-up 8s infinite 1s;
+    }
+
+    &__icon-javascript {
+        animation: move-icon-up 8s infinite 2s;
+    }
+
+    &__icon-php {
+        animation: move-icon-up 8s infinite 3s;
+    }
+
+    &__icon-symfony {
+        animation: move-icon-up 8s infinite 4s;
+    }
+
+    &__icon-mysql {
+        animation: move-icon-up 8s infinite 5s;
+    }
+
+    &__icon-sass {
+        animation: move-icon-up 8s infinite 6s;
+    }
+
+    &__icon-css {
+        animation: move-icon-up 8s infinite 7s;
+    }
+
+    &__icon-html {
+        animation: move-icon-up 8s infinite 8s;
+    }
+
+}
+
+// Animations
+@keyframes move-in-left {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes move-in-right {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes move-in-up {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+
+}
+
+@keyframes move-icon-up {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 
 }

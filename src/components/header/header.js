@@ -1,56 +1,53 @@
-import React from 'react';
+import Navigation from "../navigation/navigation";
 
-// Icons
-import { FaPhp, FaReact, FaJs, FaSass, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+// Import Icons
 import { IconContext } from 'react-icons/lib';
-import { SiMysql } from 'react-icons/si';
-import { DiSymfony } from 'react-icons/di';
-
-// Components
-import Navbar from '../navbar/navbar';
+import { FaNodeJs, FaReact, FaPhp, FaSymfony, FaSass, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { SiMysql, SiJavascript } from 'react-icons/si';
 
 // Import style file
 import './header.scss';
 
-const Header = () => {
+const Header = ({ subTitle = "Full Stack Developer" }) => {
     return (
-       <header>
-           <Navbar />
-           <section className="header-title">
-               <section className="header-title-main">
-                   <h1 className="header-title-main-one">Marco Valeri</h1>
-                   <h2 className="header-title-main-two">Full Stack Developer</h2>
-               </section>
-               <section className="header-icons">
-                   <IconContext.Provider value={{ className: 'react-icons' }}>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-php'}}>
-                            <FaPhp />
+        <header className="header">
+            <Navigation />
+            <div className="header__container-content">
+                <div className="header__content-wrapper">
+                    <h1 className="header__title h1">Marco Valeri</h1>
+                    <h2 className="header__title-sub h2">{ subTitle }</h2>
+                    <div className="header__container-icons">
+                        <IconContext.Provider value={{ className: 'icon icon__node header__icon-node' }}>
+                            <FaNodeJs />
                         </IconContext.Provider>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-symfony'}}>
-                            <DiSymfony />
-                        </IconContext.Provider>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-mysql'}}>
-                            <SiMysql />
-                        </IconContext.Provider>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-react'}}>
+                        <IconContext.Provider value={{ className: 'icon icon__react header__icon-react' }}>
                             <FaReact />
                         </IconContext.Provider>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-js'}}>
-                            <FaJs />
+                        <IconContext.Provider value={{ className: 'icon icon__javascript header__icon-javascript' }}>
+                            <SiJavascript />
                         </IconContext.Provider>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-sass'}}>
+                        <IconContext.Provider value={{ className: 'icon icon__php header__icon-php' }}>
+                            <FaPhp />
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{ className: 'icon icon__symfony header__icon-symfony' }}>
+                            <FaSymfony />
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{ className: 'icon icon__mysql header__icon-mysql' }}>
+                            <SiMysql />
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{ className: 'icon icon__sass header__icon-sass' }}>
                             <FaSass />
                         </IconContext.Provider>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-css'}}>
+                        <IconContext.Provider value={{ className: 'icon icon__css header__icon-css' }}>
                             <FaCss3Alt />
                         </IconContext.Provider>
-                        <IconContext.Provider value={{ className: 'react-icons react-icons-html'}}>
+                        <IconContext.Provider value={{ className: 'icon icon__html header__icon-html' }}>
                             <FaHtml5 />
                         </IconContext.Provider>
-                   </IconContext.Provider>
-                </section>
-           </section>
-       </header>
+                    </div>
+                </div>
+            </div>
+        </header>
     )
 }
 

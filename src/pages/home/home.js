@@ -1,23 +1,23 @@
-import React from 'react';
-
-// Components
-import Header from '../../components/header/header';
-import Bars from '../../components/bars/bars';
-import Skills from '../../components/skills/skills';
+import AboutMePreview from '../../components/about-me-preview/about-me-preview';
+import CarouselInfinite from '../../components/carousel-infinite-skills/carousel-infinite-skills';
 import Footer from '../../components/footer/footer';
+import Header from '../../components/header/header';
+import PortfolioPreview from '../../components/portfolio-preview/portfolio-preview';
 
-// Import style file
 import './home.scss';
 
 const Home = () => {
+
     return (
-        <div className="home-grid-container">
-            <Header />
-            <Bars />
-            <Skills />
+        <>
+            <Header subTitle="Full Stack Developer" />
+            <PortfolioPreview />
+            <CarouselInfinite />
+            <AboutMePreview />
             <Footer />
-        </div>
+        </>
     )
+
 }
 
 export default Home;

@@ -1,38 +1,16 @@
-.portfolio-grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "squares"
-    "portfolio-title"
-    "main"
-    "footer";
+@import '../../App.scss';
 
-    header {
-        grid-area: header;
-    }
+.portfolio {
+    width: 100%;
+    margin-top: 5rem;
+    font-family: 'Playfair Display', serif;
 
-    .squares {
-        grid-area: squares;
-    }
-
-    .portfolio-title {
-        grid-area: portfolio-title;
-        margin-top: 3rem;
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    main {
-        grid-area: main;
-        margin-top: 2rem;
+    &__container {
+        width: 100%;
         display: flex;
+        align-items: flex-start;
         justify-content: space-around;
-        align-items: center;
         flex-wrap: wrap;
     }
 
-    footer {
-        grid-area: footer;
-    }
 }

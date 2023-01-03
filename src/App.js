@@ -1,23 +1,29 @@
-import { Switch, Route } from 'react-router-dom';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
-// Components
+import AboutMe from './pages/about-me/about-me';
+import Contact from './pages/contact/contact';
 import Home from './pages/home/home';
 import Portfolio from './pages/portfolio/portfolio';
-import About from './pages/about/about';
-import Contact from './pages/contact/contact';
-import Viaggin from './pages/viaggin/viaggin';
+import ScrollToTop from './components/scroll-top/scroll-top';
 
-const App = () => {
+import './App.scss';
+
+
+
+function App() {
+
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/viaggin" component={Viaggin} />
-    </Switch>
-  )
+    <>
+        <ScrollToTop>
+          <Routes>
+              <Route exact path='/' element={<Home />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/about-me' element={<AboutMe />} />
+          </Routes>
+        </ScrollToTop>
+    </>
+  );
 }
 
 export default App;

@@ -1,131 +1,40 @@
-footer {
+@import '../../App.scss';
+
+.footer {
+    height: auto;
     min-height: 30vh;
-    margin-top: 2rem;
-    padding: 1rem;
-    text-align: center;
-    background-color: #000;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
 
-    .react-icons-linkedin,
-    .react-icons-github,
-    .react-icons-twitter {
-        display: block;
-        margin: 1rem auto;
-        font-size: 2rem;
+    &__container-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem;
     }
 
-    .react-icons-linkedin {
-        color: #0A66C2;
-    }
-
-    .react-icons-github {
-        color: #F1502F;
-    }
-
-    .react-icons-twitter {
-        color: #1DA1F2;
-    }
-
-    .footer-heart {
-        color: #ff0000;
-        font-size: 1.5rem;
-    }
-
-    p {
-        line-height: 1.6;
-    }
-}
-
-/*
-* Media Queries max with 299px
-* for small smartphone like JioPhone 2
-*/
-@media (max-width: 299px) {
-
-    footer {
-        min-height: 70vh;
-    }
-
-}
-
-/*
-* Media Queries min width 300px max with 320px
-* for small smartphone like iPhone 4
-*/
-@media (min-width: 300px) and (max-width: 320px) {
-
-    footer {
-        min-height: 40vh;
-    }
-
-}
-
-/*
-* Media Queries min width 450px max with 767px
-* for landscape
-*/
-@media (min-width: 450px) and (max-width: 767px) {
-
-    footer {
-        min-height: 60vh;
-    }
-
-}
-
-/*
-* Media Queries min width 768px max with 1024px
-* for tablets
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    footer {
-        padding: 1.5rem;
+    &__social-icon {
+        transition: transform .5s;
         
-        .react-icons-linkedin,
-        .react-icons-github,
-        .react-icons-twitter {
-            font-size: 4rem;
-            margin: 3rem auto;
-        }
-
-        .footer-heart {
-            font-size: 3.5rem;
-        }
-
-        p {
-            font-size: 2rem;
+        &:hover {
+            transform: scale(1.1);
+            transition: transform .5s;
         }
     }
 
-}
-
-/*
-* Media Queries min width 1025px
-* for laptops and desktop
-*/
-@media (min-width: 1025px){
-
-    footer {
-        min-height: 50vh;
-        height: auto;
-        padding: 1.5rem;
-
-        .react-icons-linkedin,
-        .react-icons-github,
-        .react-icons-twitter {
-            font-size: 3rem;
-            margin: 3rem auto;
-        }
-
-        .footer-heart {
-            font-size: 3rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-
-        
+    &__credits {
+        color: $white;
+        font-family: 'Fuzzy Bubbles', cursive;
+        text-align: center;
+        padding: 1rem;
     }
 
+    &__heart {
+        font-size: 3rem;
+        color: $red;
+    }
 }
