@@ -18,7 +18,8 @@
             "showRepository": true,
             "projectRepository": "https://github.com/MarcoValeri/viaggin",
             "projectUrl": "https://viaggin.com/",
-            "projectButton": "Check it out"
+            "projectButton": "Check it out",
+            "projectShowButton": false
         },
         {
             "projectId": 3,

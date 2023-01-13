@@ -69,6 +69,7 @@ const Portfolio = () => {
                         projectRepository={project.projectRepository}
                         projectUrl={project.projectUrl}
                         projectButton={project.projectButton}
+                        showButton={project.projectShowButton}
                     />
                 )
             })

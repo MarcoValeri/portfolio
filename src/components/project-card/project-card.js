@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 
 import './project-card.scss';
 
-const ProjectCard = ({ projectImage, projectTitle, projectDescription, showRepository, projectRepository, projectUrl, projectButton }) => {
+const ProjectCard = ({ projectImage, projectTitle, projectDescription, showRepository, projectRepository, projectUrl, projectButton, showButton = true }) => {
 
     /**
      * Create a function that gets
@@ -40,7 +40,7 @@ const ProjectCard = ({ projectImage, projectTitle, projectDescription, showRepos
                 </div>
                 <div className="project-card__container-project-btn">
                     {showGitRepository(showRepository)}
-                    <ButtonAnimated url={projectUrl} content={projectButton} />
+                    { showButton ? <ButtonAnimated url={projectUrl} content={projectButton} /> : '' }
                 </div>
             </div>
         </div>
