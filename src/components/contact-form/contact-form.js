@@ -18,7 +18,7 @@ const ContactForm = () => {
             message: message.value,
         };
 
-        let response = await fetch('http://localhost:8000/contact', {
+        let response = await fetch('https://node-api-374810.nw.r.appspot.com/portfolio/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',

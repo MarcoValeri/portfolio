@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8000",
+  "proxy": "https://node-api-374810.nw.r.appspot.com/portfolio/contact",
   "eslintConfig": {
     "extends": [
       "react-app",
